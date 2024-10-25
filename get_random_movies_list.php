@@ -1,5 +1,6 @@
 <?php
-include("reload_disk.php");
+include("cors_policy.php");
+//include("reload_disk.php");
 include("path.php"); 
 include("db.php");
 

@@ -1,6 +1,8 @@
 <?php
 $username = $_GET["username"];
 $show = $_GET["show"];
+include("cors_policy.php");
+
 
 include("db.php");
 $sql = "delete from shows_watched where username=\"" . $username . "\" and name=\"" . $show . "\"";

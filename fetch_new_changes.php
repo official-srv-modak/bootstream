@@ -1,5 +1,7 @@
 <?php
 include("check_path.php"); // to check if the file is present or not
+include("cors_policy.php");
+
 
 function starts_with($string, $startString)
 	{

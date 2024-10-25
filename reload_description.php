@@ -1,4 +1,5 @@
 <?php
+include("cors_policy.php");
 include("reload_disk.php");
 include("path.php");
 include("reload_shows_watched");

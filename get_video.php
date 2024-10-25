@@ -19,6 +19,7 @@
 		     
          ?>
         <?php 
+        include("cors_policy.php");
          }
          ?>
       <video class="center" controls id="video" >

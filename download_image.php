@@ -1,4 +1,5 @@
 <?php
+include("cors_policy.php");
 
 $url = $_GET["url"];
 $img = $_GET["directory"];

@@ -1,4 +1,5 @@
 <?php
+include("cors_policy.php");
 
 function startsWith ($string, $startString)
 {

@@ -1,4 +1,5 @@
 <?php
+include("cors_policy.php");
 include ("path.php");
 $query = $_GET["query"];
 $username = $_GET["username"];

@@ -1,6 +1,7 @@
 <?php
 include("refresh.php");
 include("path.php"); 
+include("cors_policy.php");
 
 include("db.php");
 $i = 0;

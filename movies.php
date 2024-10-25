@@ -2,6 +2,8 @@
 
 include("check_path.php"); // to check if the file is present or not
 include("path.php"); 
+include("cors_policy.php");
+
 
 $viability = check();
 if ($viability)

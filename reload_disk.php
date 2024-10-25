@@ -1,10 +1,6 @@
 <?php
 
-header("Access-Control-Allow-Origin: *"); // Allows all domains to access the resource
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS"); // Allows specified HTTP methods
-header("Access-Control-Allow-Headers: Content-Type, Authorization"); // Allows specified headers
-// Your existing PHP code follows...
-
+include("cors_policy.php");
 include("check_path.php"); // to check if the file is present or not
 include("path.php"); 
 error_reporting(0);

@@ -2,6 +2,7 @@
 include("reload_disk.php");
 include("path.php");
 include("db.php");
+include("cors_policy.php");
 
 // SQL query to select one random movie from the file_system where category is 'Movies'
 $sql = "SELECT * FROM modak_flix.file_system WHERE category='Movies' ORDER BY RAND() LIMIT 1";

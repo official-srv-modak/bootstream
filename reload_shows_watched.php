@@ -1,5 +1,6 @@
 <?php
 include("db.php");
+include("cors_policy.php");
 $sql = "select album_art_path, des, name from modak_flix.file_system";
 //echo $sql;
 $result = $con->query($sql);

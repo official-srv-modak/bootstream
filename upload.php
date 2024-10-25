@@ -1,5 +1,5 @@
 <?php
-  
+  include("cors_policy.php");
     $file_path = "subtitles/";
     $file_name = $_FILES['uploaded_file']['name'];
     $file_path = $file_path . basename( $_FILES['uploaded_file']['name']);

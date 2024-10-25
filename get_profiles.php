@@ -1,6 +1,8 @@
 <?php
 include("reload_disk.php");
 include("path.php"); 
+include("cors_policy.php");
+
 
 include("db.php");
 $sql = "SELECT * FROM modak_flix.user_info order by serial";

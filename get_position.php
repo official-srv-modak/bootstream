@@ -1,6 +1,7 @@
 <?php
 
 $username = $_GET["username"];
+include("cors_policy.php");
 
 include("db.php");
 $sql = "select * from shows_watched where username='$username'";

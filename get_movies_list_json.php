@@ -1,6 +1,7 @@
 <?php
-// include("reload_disk.php");
+//include("reload_disk.php");
 include("path.php"); 
+include("cors_policy.php");
 
 include("db.php");
 $sql = "SELECT DISTINCT * FROM modak_flix.file_system WHERE category='Movies 'ORDER BY NAME";
