@@ -11,7 +11,7 @@ function search_value($row2, $row) {
     return false;
 }
 function get_shows_watched() {
-    include ("reload_disk.php");
+    // include ("reload_disk.php");
     include ("path.php");
     include ("reload_shows_watched.php");
     include ("db.php");

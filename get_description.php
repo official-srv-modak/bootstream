@@ -1,6 +1,6 @@
 <?php
 include("path.php");
-include("reload_disk.php");
+// include("reload_disk.php");
 include("reload_shows_watched.php");
 
 include("db.php");

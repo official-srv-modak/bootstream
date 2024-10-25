@@ -386,3 +386,12 @@ Movies/Titanic (1997)/rainy day.mp4
 Movies/Venom (2018)/album_art.jpg
 Movies/Venom (2018)/description.txt
 Movies/Venom (2018)/rainy day.mp4
+*.mp4
+*.jpg
+Movies/.DS_Store
+Movies/Main Hoon Na (2004)/album_art.jpg
+Movies/Main Hoon Na (2004)/description.txt
+Movies/Man of Steel (2013)/album_art.jpg
+Movies/Man of Steel (2013)/description.txt
+Movies/Spider-Man (2002)/album_art.jpg
+Movies/Spider-Man (2002)/description.txt
