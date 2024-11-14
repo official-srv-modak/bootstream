@@ -8,7 +8,7 @@ include("db.php");
 $limit = isset($_GET['limit']) && is_numeric($_GET['limit']) ? intval($_GET['limit']) : 5;
 
 // SQL query to select distinct random movies from the Movies category with the specified limit
-$sql = "SELECT DISTINCT name, des, path, language, album_art_path, url 
+$sql = "SELECT DISTINCT *
         FROM modak_flix.file_system 
         WHERE category='Movies' 
         ORDER BY RAND() 
