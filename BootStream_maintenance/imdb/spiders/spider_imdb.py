@@ -60,7 +60,7 @@ class SpiderImdbSpider(Spider):
         url_image_file.close()
 
         crew_data = {}
-        des = response.xpath("//*[@class='sc-fbb3c9a4-2 eAsMYT']/text()").extract()
+        des = response.xpath("//*[@class='sc-3ac15c8d-0 hRUoSB']/text()").extract()
         certificate = response.xpath("//*[@class='ipc-link ipc-link--baseAlt ipc-link--inherit-color']/text()").extract()
         if len(des) > 0 and len(certificate) > 0:
             des[0] = des[0] + "\n\nRated : "+certificate[6]
