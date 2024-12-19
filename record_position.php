@@ -10,11 +10,12 @@ $pos = $_GET["pos"];
 $dur = $_GET["duration"];
 $cause = $_GET["cause"];
 $name = $_GET["name"];
+$id = $_GET["id"];
 $aapath = "";
 $des = "";
 
 
-function insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name)
+function insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name, $id)
 {
     include ("db.php");
     $sql = "select album_art_path, des from modak_flix.file_system where url = \"" . $shows . "\"";
@@ -35,7 +36,7 @@ function insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name
         echo "0 results from Movies</br>";
     }
 
-    $sql = "INSERT INTO shows_watched (username, url, position, album_art_path, des, duration, cause, name) VALUES (\"" . $username . "\", \"" . $shows . "\", \"" . $pos . "\", \"" . $aapath . "\", \"" . $des . "\",\"".$dur."\",\"".$cause."\",\"".$name."\")";
+    $sql = "INSERT INTO shows_watched (username, url, position, album_art_path, des, duration, cause, name, id) VALUES (\"" . $username . "\", \"" . $shows . "\", \"" . $pos . "\", \"" . $aapath . "\", \"" . $des . "\",\"".$dur."\",\"".$cause."\",\"".$name."\",\"".$id."\")";
     $res = mysqli_query($con, $sql);
 
     if ($res == 1)
@@ -48,7 +49,7 @@ function insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name
         echo "<p>" . mysqli_error($con) . "</p>" . $sql . "</br";
     }
 }
-function update($username, $shows, $pos, $aapath, $des, $dur, $cause, $name)
+function update($username, $shows, $pos, $aapath, $des, $dur, $cause, $name, $id)
 {
     include ("db.php");
     $sql = "select album_art_path, des from modak_flix.file_system where url = \"" . $shows . "\"";
@@ -82,7 +83,7 @@ function update($username, $shows, $pos, $aapath, $des, $dur, $cause, $name)
         echo "<p>" . mysqli_error($con) . "</p>" . $sql . "</br";
     }
 
-    insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name);
+    insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name, $id);
     
     /*include ("db.php");
     $sql = "update modak_flix.shows_watched set position = ".$pos.", album_art_path = \"".$aapath."\", des = \"".$des."\", cause = \"".$cause."\", name = \"".$name."\" where url = \"".$shows."\"";
@@ -107,11 +108,11 @@ $result = $con->query($sql);
 if ($result->num_rows > 0)
 {
     // output data of each row
-    update($username, $shows, $pos, $aapath, $des, $dur, $cause, $name);
+    update($username, $shows, $pos, $aapath, $des, $dur, $cause, $name, $id);
 }
 else
 {
-    insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name);
+    insert_into($username, $shows, $pos, $aapath, $des, $dur, $cause, $name, $id);
 }
 
 ?>
