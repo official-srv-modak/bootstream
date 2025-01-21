@@ -1,5 +1,12 @@
-Summary : 
+Summary:
 
-IMDB Rating : 8.1/10
 
-Crews of movies :   Pete Docter, Ronnie Del Carmen, Writers, Pete Docter, Ronnie Del Carmen, Meg LeFauve, Stars, Amy Poehler, Bill Hader, Lewis Black, etc.
+Computer Infrastructure - 3 takes a comprehensive look at cutting-edge technologies such as edge computing, containerization, and modern cloud infrastructure. It explores high-performance computing strategies, fault tolerance, and efficient resource management, making it ideal for professionals working with large-scale, mission-critical systems.
+
+Rating: 9.0/10
+
+Crews of Movies:
+
+Developed by: John Doe, Jane Smith
+Key Contributors: Mark Johnson, Emily Davis
+Main Contributors: Tom Harris, Sarah Lewis, David Clark

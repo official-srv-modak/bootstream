@@ -1,5 +1,12 @@
-Summary : 
+Summary:
 
-IMDB Rating : 7.5/10
 
-Crews of movies :   Scott Derrickson, Writers, Jon Spaihts, Scott Derrickson, C. Robert Cargill, Stars, Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, etc.
+Computer Infrastructure - 1 focuses on the foundational elements of computer systems, covering hardware components, networking basics, and system architecture. It provides a solid understanding of the underlying infrastructure that supports modern computing environments, including data storage, processing, and communication.
+
+Rating: 8.3/10
+
+Crews of Movies:
+
+Developed by: John Doe, Jane Smith
+Key Contributors: Mark Johnson, Emily Davis
+Main Contributors: Tom Harris, Sarah Lewis, David Clark
